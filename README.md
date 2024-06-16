@@ -63,6 +63,15 @@ sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-console-consumer.sh --zookeeper localh
 </p>
 <p>No terminal a esquerda é o <code>Producer</code> e a direita é o <code>Consumer</code></p>
 
-<h2>Criandoo agentes do Flume</h2>
+<h2>Criando agentes do Flume</h2>
+
+```shell
+flume-ng agent --conf-file spool-to-logger.properties --name agent1 -Dflume.root.logger=WARN,console
+```
+<p align="center">
+  <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/bf2cd0e5-e63d-4c0c-8e04-7d4dd9f4e271" alt="img8">
+</p>
+<p>O Flume vai fazer a leitura pela pasta <code>Spool-Test</code> irei criar uma pasta chamada <code>Arquivos</code> e nele irei criar arquivos de texto e escrever alguma coisa nesse arquivo e apos isso arrastar esse arquivo de pastas</p>
+
 
 
