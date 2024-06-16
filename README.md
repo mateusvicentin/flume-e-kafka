@@ -38,5 +38,27 @@ sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-topics.sh --list --zookeeper localhost
   <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/08f30aad-9020-43be-b5b3-e910acb5ac48" alt="img4">
 </p>
 
+<h2>Inserindo Strings no topico criado no Kafka</h2>
+<p>Vamos utilizar dois comandos, o <code>Producer</code> e o <code>Consumer</code> um será responsavel pro inserir as Strings e o outro será responsavel por ler essas String</p>
+
+```shell
+sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic mateusvicentin
+```
+```shell
+sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic mateusvicentin
+```
+<h4>Producer</h4>
+<p align="center">
+  <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/b73b3667-b2fd-43d4-897b-29df6900a60d" alt="img5">
+</p>
+
+<h4>Consumer</h4>
+<p align="center">
+  <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/eb8fc47c-69f1-484e-aadc-e8d42805aa75" alt="img6">
+</p>
+
+
+
+
 
 
