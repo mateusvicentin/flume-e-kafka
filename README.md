@@ -73,8 +73,9 @@ flume-ng agent --conf-file spool-to-logger.properties --name agent1 -Dflume.root
 </p>
 <p>O Flume vai fazer a leitura pela pasta <code>Spool-Test</code> irei criar uma pasta chamada <code>Arquivos</code> e nele irei criar arquivos de texto e escrever alguma coisa nesse arquivo e apos isso arrastar esse arquivo de pastas</p>
 
+<p align="center">
+  
 ![Exemplo de GIF](https://github.com/mateusvicentin/flume-e-kafka/blob/main/gif1.gif?raw=true)
-
-![Alt Text](caminho_para_o_seu_gif_no_repositório)
+</p>
 
 
