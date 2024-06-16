@@ -73,6 +73,6 @@ flume-ng agent --conf-file spool-to-logger.properties --name agent1 -Dflume.root
 </p>
 <p>O Flume vai fazer a leitura pela pasta <code>Spool-Test</code> irei criar uma pasta chamada <code>Arquivos</code> e nele irei criar arquivos de texto e escrever alguma coisa nesse arquivo e apos isso arrastar esse arquivo de pastas</p>
 
-<a class="chip" href="">
+<a class="chip" href="/gif1.gif">
 
 
