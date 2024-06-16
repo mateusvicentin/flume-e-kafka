@@ -59,8 +59,10 @@ sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-console-consumer.sh --zookeeper localh
 
 <h2>Testando a leitura</h2>
 <p align="center">
-  <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/6f84ce33-4fcb-4cd6-8fde-8f0d513eacf0" alt="img7">
+  
+![Exemplo de GIF](https://github.com/mateusvicentin/flume-e-kafka/blob/main/gif2.gif)
 </p>
+
 <p>No terminal a esquerda é o <code>Producer</code> e a direita é o <code>Consumer</code></p>
 
 <h2>Criando agentes do Flume</h2>
