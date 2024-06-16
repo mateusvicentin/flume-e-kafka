@@ -57,7 +57,10 @@ sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-console-consumer.sh --zookeeper localh
   <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/eb8fc47c-69f1-484e-aadc-e8d42805aa75" alt="img6">
 </p>
 
-
+<h2>Testando a leitura</h2>
+<p align="center">
+  <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/6f84ce33-4fcb-4cd6-8fde-8f0d513eacf0" alt="img7">
+</p>
 
 
 
