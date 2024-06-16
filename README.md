@@ -61,7 +61,8 @@ sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-console-consumer.sh --zookeeper localh
 <p align="center">
   <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/6f84ce33-4fcb-4cd6-8fde-8f0d513eacf0" alt="img7">
 </p>
+<p>No terminal a esquerda é o <code>Producer</code> e a direita é o <code>Consumer</code></p>
 
-
+<h2>Criandoo agentes do Flume</h2>
 
 
