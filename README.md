@@ -131,6 +131,7 @@ sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-console-consumer.sh --zookeeper localh
   
 ![Exemplo de GIF](https://github.com/mateusvicentin/flume-e-kafka/blob/main/gif3.gif)
 </p>
+<p>No terminal à esquerda está o <code>Logger(Flume)</code> e à direita está o <code>Consumer</code>. O logger caso de algum erro ou problema irá mostrar alguma informação.</p>
 
 
 
