@@ -90,7 +90,7 @@ sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localho
 </p>
 <h4>Configurando o <code>Spool-to-Kafka</code> para que ele faça a função de <code>Procuder</code> e <code>Consumer</code></h4>
 <p align="center">
-  <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/4631c7b4-65b6-4cb5-854f-a65287416327" alt="img10">
+  <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/54eed2f3-e90d-4168-8895-888e42d92823" alt="img10">
 </p>
 
 <h4>Acessando o Flume</h4>
