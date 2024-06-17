@@ -9,11 +9,9 @@
 
 
 <h2>Iniciando o Servidor do Kafka</h2>
-<p>Vamos iniciar o servidor do Kafka, para que seja possivel com que o <code>Producer</code> e <code>Consumer</code> possa funcionar.</p>
-
-Producer: envia as mensagens para um topico, gerenciado e armazenado por um
-cluster
-Consumer: subscreve no topico utilizado para que possa realizar a leitura e processamento das mensagens do producer
+<p>Vamos iniciar o servidor do Kafka para que seja possível que o <code>Producer</code> e o <code>Consumer</code> funcionem corretamente.</p>
+<p><strong>Producer:</strong> envia mensagens para um tópico, que é gerenciado e armazenado por um cluster.</p>
+<p><strong>Consumer:</strong> subscreve no tópico utilizado para realizar a leitura e o processamento das mensagens do <code>Producer</code>.</p>
 
 ```shell
 sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-server-start.sh /home/puc/kafka_2.11-1.0.0/config/server.properties
