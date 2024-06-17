@@ -1,4 +1,4 @@
-<h1 align="center">Executando arquvios com Flume e Kafka </h1>
+<h1 align="center">Executando Arquvios com Flume e Kafka </h1>
 <p>O projeto tem como objetivo apresentar um relatório utilizando Flume e Kafka. Esse é um projeto da materia de Processamento de fluxos discretos e contínuos de dados, que será feito por meio de uma máquina no VirtualBox disponibilizada pelo professor, onde já está configurado o Kafka e Flume na maquina virtual</p>
 
 
