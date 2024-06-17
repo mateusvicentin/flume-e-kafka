@@ -80,4 +80,36 @@ flume-ng agent --conf-file spool-to-logger.properties --name agent1 -Dflume.root
 ![Exemplo de GIF](https://github.com/mateusvicentin/flume-e-kafka/blob/main/gif1.gif?raw=true)
 </p>
 
+<h2>Criando topico no Kafka para comunicação com o Flume</h2>
+
+```shell
+sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic flume-mateus
+```
+<p align="center">
+  <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/d38692f4-1bc3-4ae9-b36f-092b1bdaa832" alt="img9">
+</p>
+<h4>Configurando o <code>Spool-to-Kafka</code> para que ele faça a função de <code>Procuder</code> e <code>Consumer</code></h4>
+<p align="center">
+  <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/4631c7b4-65b6-4cb5-854f-a65287416327" alt="img10">
+</p>
+
+<h4>Acessando o Flume</h4>
+
+```shell
+flume-ng agent --conf-file spool-to-kafka.properties --name agent2 -Dflume.root.logger=WARN,console
+```
+<p align="center">
+  <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/d0579e76-878a-4188-a906-e52c188b371e" alt="img11">
+</p>
+<h4>Acessando o Consumer do topico criado</h4>
+<p align="center">
+  <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/1a5f8ae2-3aeb-4f96-b9b2-87e3baf0a69f" alt="img12">
+</p>
+
+```shell
+sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic flume-mateus
+```
+
+
+
 
