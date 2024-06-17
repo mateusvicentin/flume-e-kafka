@@ -1,5 +1,5 @@
 <h1 align="center">Executando arquvios com Flume e Kafka </h1>
-<p>O projeto tem como objetivo apresentar um relatório utilizando Flume e Kafka. Esse é um projeto da materia de Processamento de fluxos discretos e contínuos de dados, que será feito por meio de uma máquina no VirtualBox disponibilizada pelo professor, onde já está configurado o Kafka e Flume na maquina virtual</p>
+<p>O projeto tem como objetivo apresentar um relatório utilizando Flume e Kafka. Este é um projeto da matéria de Processamento de Fluxos Discretos e Contínuos de Dados, que será realizado por meio de uma máquina no VirtualBox disponibilizada pelo professor, onde já estão configurados o Kafka e o Flume na máquina virtual.</p>
 
 <h2>Kafka</h2>
 <p>O Apache Kafka é um sistema de mensageria que pode realizar as seguintes funções: publicar e assinar fluxos de registros, armazenar fluxos de registros de forma eficiente na ordem em que os registros foram gerados, e processar fluxos de registros em tempo real.</p>
