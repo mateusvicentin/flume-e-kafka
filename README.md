@@ -92,6 +92,7 @@ flume-ng agent --conf-file spool-to-logger.properties --name agent1 -Dflume.root
 </p>
 
 <h2>Criando Tópico no Kafka para Comunicação com o Flume</h2>
+<p>Vou criar um tópico chamado <code>flume-mateus</code> para utilizar nesta parte do projeto.</p>
 
 ```shell
 sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic flume-mateus
@@ -104,6 +105,7 @@ sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localho
 <p align="center">
   <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/54eed2f3-e90d-4168-8895-888e42d92823" alt="img10">
 </p>
+<p>Vou colocar em <code>agent2.sinks.sink1.topic = flume-mateus</code> porque este é o nome do tópico que criei anteriormente.</p>
 
 <h4>Acessando o Apache Flume</h4>
 
