@@ -105,7 +105,7 @@ sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localho
 <p align="center">
   <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/54eed2f3-e90d-4168-8895-888e42d92823" alt="img10">
 </p>
-<p>Vou colocar em <code>agent2.sinks.sink1.topic = flume-mateus</code> porque este é o nome do tópico que criei anteriormente.</p>
+<p>Vou colocar em <code>agent2.sinks.sink1.topic =</code> 'flume-mateus' porque este é o nome do tópico que criei anteriormente.</p>
 
 <h4>Acessando o Apache Flume</h4>
 
