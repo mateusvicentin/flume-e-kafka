@@ -1,8 +1,12 @@
-<h1 align="center">Executando Arquvios com Flume e Kafka </h1>
+<h1 align="center">Executando arquvios com Flume e Kafka </h1>
 <p>O projeto tem como objetivo apresentar um relatório utilizando Flume e Kafka. Esse é um projeto da materia de Processamento de fluxos discretos e contínuos de dados, que será feito por meio de uma máquina no VirtualBox disponibilizada pelo professor, onde já está configurado o Kafka e Flume na maquina virtual</p>
 
+<h2>Iniciando o Servidor do Kafka</h2>
+<p>Vamos iniciar o servidor do Kafka, para que seja possivel com que o <code>Producer</code> e <code>Consumer</code> possa funcionar.</p>
 
-<h2>Inicinado o Servidor do Kafka</h2>
+Producer: envia as mensagens para um topico, gerenciado e armazenado por um
+cluster
+Consumer: subscreve no topico utilizado para que possa realizar a leitura e processamento das mensagens do producer
 
 ```shell
 sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-server-start.sh /home/puc/kafka_2.11-1.0.0/config/server.properties
@@ -15,6 +19,7 @@ sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-server-start.sh /home/puc/kafka_2.11-1
 </p>
 
 <h2>Criando topicos no Kafka</h2>
+<p>Irei criar um topico chamado <code>mateusvicentin</code> para exemplo do funcionamento do Kafka</p>
 
 ```shell
 sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic mateusvicentin
@@ -24,6 +29,7 @@ sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localho
 </p>
 
 <h2>Listando topicos no Kafka</h2>
+<p>Vou utilizar o comando <code>--list</code> para visualizar todos os topicos que ja foram criados, incluisve o que criei <code>mateusvicentin</code></p>
 
 ```shell
 sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-topics.sh --list --zookeeper localhost:2181
@@ -42,16 +48,23 @@ sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-console-producer.sh --broker-list loca
 sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic mateusvicentin
 ```
 <h4>Producer</h4>
+<p>O responsavel por enviar as mensagens ao topico.</p>
+
 <p align="center">
   <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/b73b3667-b2fd-43d4-897b-29df6900a60d" alt="img5">
 </p>
 
 <h4>Consumer</h4>
+<p>O responsavel por por receber e fazer a leitura das mensagens.</p>
+
+
 <p align="center">
   <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/eb8fc47c-69f1-484e-aadc-e8d42805aa75" alt="img6">
 </p>
 
 <h2>Testando a leitura</h2>
+<p>Para testar a leitura, fiz a gravação da tela onde foi aberto dois terminais, um contendo o <code>Producer</code> e outro contendo o <conde>Consumer</conde> para que possa ser visualizado em tempo real o funcionamento.</p>
+
 <p align="center">
   
 ![Exemplo de GIF](https://github.com/mateusvicentin/flume-e-kafka/blob/main/gif2.gif)
