@@ -110,6 +110,10 @@ flume-ng agent --conf-file spool-to-kafka.properties --name agent2 -Dflume.root.
 sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic flume-mateus
 ```
 
+<h2>Testando comunicação</h2>
+
+
+
 
 
 
