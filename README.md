@@ -112,6 +112,10 @@ sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-console-consumer.sh --zookeeper localh
 
 <h2>Testando comunicação</h2>
 
+<p align="center">
+  
+![Exemplo de GIF](https://github.com/mateusvicentin/flume-e-kafka/blob/main/gif3.gif)
+</p>
 
 
 
