@@ -56,7 +56,7 @@ sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-topics.sh --list --zookeeper localhost
 </p>
 
 <h2>Inserindo Strings no Tópico Criado no Kafka</h2>
-<p>Vamos utilizar dois comandos: o <code>Producer</code> e o <code>Consumer</code>. Um será responsável por inserir as strings, e o outro será responsável por ler essas strings.</p>
+<p>Vamos utilizar dois comandos: o <code>Producer</code> para inserir as strings no tópico, e o <code>Consumer</code> para ler essas strings.
 
 ```shell
 sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic mateusvicentin
@@ -65,14 +65,14 @@ sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-console-producer.sh --broker-list loca
 sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic mateusvicentin
 ```
 <h4>Producer</h4>
-<p>O responsável por enviar as mensagens ao tópico.</p>
+<p>O Producer é responsável por enviar as mensagens ao tópico. Ele permite que diferentes fontes de dados enviem informações de forma eficiente e escalável.</p>
 
 <p align="center">
   <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/b73b3667-b2fd-43d4-897b-29df6900a60d" alt="img5">
 </p>
 
 <h4>Consumer</h4>
-<p>O responsável por receber e fazer a leitura das mensagens.</p>
+<p>O Consumer é responsável por receber e fazer a leitura das mensagens enviadas ao tópico. Ele subscreve no tópico utilizado pelo Producer e processa as mensagens, permitindo que os dados sejam consumidos e analisados por diferentes aplicações ou serviços.</p>
 
 
 <p align="center">
