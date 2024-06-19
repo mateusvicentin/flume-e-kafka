@@ -1,5 +1,5 @@
 <h1 align="center">Executando Arquivos com Flume e Kafka</h1>
-<p>Este projeto tem como objetivo apresentar um relatório utilizando Flume e Kafka. Trata-se de um trabalho da matéria de Processamento de Fluxos Discretos e Contínuos de Dados, que será realizado por meio de uma máquina virtual no VirtualBox já configurada. Nessa máquina virtual, o Kafka e o Flume já estão configurados.</p>
+<p>Este projeto tem como objetivo apresentar um relatório utilizando Flume e Kafka. Trata-se de um trabalho da matéria de Processamento de Fluxos Discretos e Contínuos de Dados, que será realizado por meio de uma máquina virtual no VirtualBox. Nessa máquina virtual, o Kafka e o Flume já estão configurados.</p>
 <h2>Apache Kafka</h2>
 <p>O Apache Kafka é uma plataforma distribuída de streaming que pode realizar as seguintes funções:</p>
 <ul>
