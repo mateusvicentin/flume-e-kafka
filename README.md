@@ -46,7 +46,7 @@ sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localho
 </p>
 
 <h2>Listando Tópicos no Kafka</h2>
-<p>Para visualizar todos os tópicos que já foram criados no Kafka, incluindo o tópico <code>mateusvicentin</code>, utilizaremos o comando <code>--list</code>. Abaixo estão os passos para listar os tópicos no Kafka:</p>
+<p>Para visualizar todos os tópicos que já foram criados no Kafka, incluindo o tópico <code>mateusvicentin</code>, utilizaremos o comando <code>--list</code>. Abaixo está o codigo para listar os tópicos no Kafka:</p>
 
 ```shell
 sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-topics.sh --list --zookeeper localhost:2181
