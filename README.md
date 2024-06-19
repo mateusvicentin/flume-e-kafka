@@ -108,12 +108,13 @@ sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localho
 <p align="center">
   <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/d38692f4-1bc3-4ae9-b36f-092b1bdaa832" alt="img9">
 </p>
-<p>Configurando o <code>Spool-to-Kafka</code> para que ele funcione como <code>Producer</code> e <code>Consumer</code></p>
+
+<p>Configurando o <code>Spool-to-Kafka</code> para que ele opere tanto como <code>Producer</code> quanto como <code>Consumer</code>.</p>
 
 <p align="center">
   <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/54eed2f3-e90d-4168-8895-888e42d92823" alt="img10">
 </p>
-<p>Vou colocar em <code>agent2.sinks.sink1.topic =</code> 'flume-mateus' porque este é o nome do tópico que criei anteriormente.</p>
+<p>Vou definir <code>agent2.sinks.sink1.topic = 'flume-mateus'</code> porque este é o nome do tópico que criei anteriormente.</p>
 
 <h4>Acessando o Apache Flume</h4>
 
@@ -123,7 +124,7 @@ flume-ng agent --conf-file spool-to-kafka.properties --name agent2 -Dflume.root.
 <p align="center">
   <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/d0579e76-878a-4188-a906-e52c188b371e" alt="img11">
 </p>
-<h4>Acessando o Consumer do tópico criado</h4>
+<h4>Acessando o Consumer do tópico criado anteriormente</h4>
 
 <p align="center">
   <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/1a5f8ae2-3aeb-4f96-b9b2-87e3baf0a69f" alt="img12">
@@ -139,8 +140,7 @@ sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-console-consumer.sh --zookeeper localh
   
 ![Exemplo de GIF](https://github.com/mateusvicentin/flume-e-kafka/blob/main/gif3.gif)
 </p>
-<p>No terminal à esquerda está o <code>Logger(Flume)</code> e à direita está o <code>Consumer</code>. O logger caso de algum erro ou problema irá mostrar alguma informação.</p>
-
+<p>No terminal à esquerda está o <code>Logger (Flume)</code> e à direita está o <code>Consumer</code>. O logger vai mostrar informações caso ocorra algum erro ou problema.</p>
 
 
 
