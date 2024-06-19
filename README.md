@@ -118,6 +118,7 @@ sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localho
 <p>Vou definir <code>agent2.sinks.sink1.topic = 'flume-mateus'</code> porque este é o nome do tópico que criei anteriormente.</p>
 
 <h4>Acessando o Apache Flume</h4>
+<p>Aqui no código é mencionado que o arquivo de configuração está presente na pasta <code>Spool-to-Kafka.properties</code>, onde foi configurado para escutar o tópico <code>flume-mateus</code>.</p>
 
 ```shell
 flume-ng agent --conf-file spool-to-kafka.properties --name agent2 -Dflume.root.logger=WARN,console
