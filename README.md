@@ -110,7 +110,7 @@ sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localho
   <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/d38692f4-1bc3-4ae9-b36f-092b1bdaa832" alt="img9">
 </p>
 
-<p>Configurando o <code>Spool-to-Kafka</code> para que ele opere tanto como <code>Producer</code> quanto como <code>Consumer</code>.</p>
+<p>Configurando o <code>Spool-to-Kafka</code> para que ele escute e se comunique com o tópico <code>flume-mateus</code>.</p>
 
 <p align="center">
   <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/54eed2f3-e90d-4168-8895-888e42d92823" alt="img10">
