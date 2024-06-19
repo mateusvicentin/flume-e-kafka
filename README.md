@@ -92,7 +92,7 @@ flume-ng agent --conf-file spool-to-logger.properties --name agent1 -Dflume.root
 <p align="center">
   <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/bf2cd0e5-e63d-4c0c-8e04-7d4dd9f4e271" alt="img8">
 </p>
-<p>O Flume vai ler da pasta <code>Spool-Test</code>. Vou criar uma pasta chamada <code>Arquivos</code> e nela colocarei arquivos de texto onde farei algumas escritas. Em seguida, vou arrastar esses arquivos entre as pastas.</p>
+<p>O Flume vai ler da pasta <code>Spool-Test</code>. Vou criar uma pasta chamada <code>Arquivos</code> e colocar arquivos de texto onde farei algumas edições. Depois, vou mover esses arquivos entre as pastas. Este tipo de registro não exibirá o arquivo na tela, apenas processará e armazenará os dados. Após a leitura, o arquivo manterá seu nome original, mas terá ".COMPLETED" adicionado ao final do nome. Por exemplo, o arquivo <code>teste1</code> será renomeado para <code>teste1.COMPLETED</code> após o término da leitura e armazenamento no log.</p>
 
 <p align="center">
   
