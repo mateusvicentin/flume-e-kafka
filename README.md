@@ -101,7 +101,7 @@ flume-ng agent --conf-file spool-to-logger.properties --name agent1 -Dflume.root
 
 <h2>Criando Tópico no Kafka para Comunicação com o Flume</h2>
 <p>Nesta etapa, vou integrar o Flume e o Kafka para realizar o procedimento. Vou criar um novo tópico para esta parte do projeto e utilizar o Flume como <code>Consumer</code> e um arquivo de texto como <code>Producer</code>. Para isso, iniciarei o Flume apontando para o tópico que será criado e para a pasta <code>Spool-to-Kafka</code>, que atuará como <code>Consumer</code>. Abaixo, podemos verificar como isso funcionará:</p>
-<p>Vou criar um tópico chamado <code>flume-mateus</code> para utilizar nesta parte do projeto.</p>
+<p>Vou criar um tópico chamado <code>flume-mateus</code></p>
 
 ```shell
 sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic flume-mateus
