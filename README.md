@@ -137,7 +137,7 @@ sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-console-consumer.sh --zookeeper localh
 ```
 
 <h2>Testando Comunicação</h2>
-<p>Da mesma forma que o teste foi realizado para o Flume, neste caso, iniciamos tanto o <code>Producer</code> quanto o <code>Consumer</code>. Iniciei o <code>Consumer</code> do tópico <code>flume-mateus</code> e mantive-o iniciado anteriormente.</p>
+<p>Assim como o teste foi realizado para o Flume, neste caso, estamos iniciando tanto o <code>Producer</code> quanto o <code>Consumer</code>. Iniciei o <code>Consumer</code> do tópico <code>flume-mateus</code> e o mantive iniciado anteriormente. Desta forma, qualquer arquivo que seja inserido na pasta será lido e exibido na tela.</p>
 
 <p align="center">
   
