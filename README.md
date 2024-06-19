@@ -20,9 +20,10 @@
 
 
 <h2>Iniciando o Servidor do Kafka</h2>
-<p>Vamos iniciar o servidor do Kafka para que seja possível que o <code>Producer</code> e o <code>Consumer</code> funcionem corretamente.</p>
-<p><strong>Producer:</strong> envia mensagens para um tópico, que é gerenciado e armazenado por um cluster.</p>
-<p><strong>Consumer:</strong> subscreve no tópico utilizado para realizar a leitura e o processamento das mensagens do <code>Producer</code>.</p>
+<p>Para que o <code>Producer</code> e o <code>Consumer</code> funcionem corretamente, é necessário iniciar o servidor do Kafka. Abaixo estão os passos para iniciar o servidor:</p>
+<p><strong>Producer:</strong> O Producer é responsável por enviar mensagens para um tópico. Esse tópico é gerenciado e armazenado por um cluster do Kafka. Ele permite que diferentes fontes de dados enviem informações de forma eficiente e escalável.</p>
+<p><strong>Consumer:</strong> O Consumer subscreve no tópico utilizado pelo Producer. Ele lê e processa as mensagens enviadas pelo Producer, permitindo que os dados sejam consumidos e analisados por diferentes aplicações ou serviços.</p>
+<p>Abaixo está um exemplo básico de como iniciar o servidor do Kafka e utilizar um Producer e um Consumer:</p>
 
 ```shell
 sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-server-start.sh /home/puc/kafka_2.11-1.0.0/config/server.properties
