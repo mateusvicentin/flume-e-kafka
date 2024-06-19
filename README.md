@@ -23,7 +23,7 @@
 <p>Para que o <code>Producer</code> e o <code>Consumer</code> funcionem corretamente, é necessário iniciar o servidor do Kafka. Abaixo estão os passos para iniciar o servidor:</p>
 <p><strong>Producer:</strong> O Producer é responsável por enviar mensagens para um tópico. Esse tópico é gerenciado e armazenado por um cluster do Kafka. Ele permite que diferentes fontes de dados enviem informações de forma eficiente e escalável.</p>
 <p><strong>Consumer:</strong> O Consumer subscreve no tópico utilizado pelo Producer. Ele lê e processa as mensagens enviadas pelo Producer, permitindo que os dados sejam consumidos e analisados por diferentes aplicações ou serviços.</p>
-<p>Abaixo está um exemplo básico de como iniciar o servidor do Kafka e utilizar um Producer e um Consumer:</p>
+<p>Abaixo está um exemplo básico de como iniciar o servidor do Kafka:</p>
 
 ```shell
 sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-server-start.sh /home/puc/kafka_2.11-1.0.0/config/server.properties
@@ -36,7 +36,7 @@ sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-server-start.sh /home/puc/kafka_2.11-1
 </p>
 
 <h2>Criando Tópicos no Kafka</h2>
-<p>Vamos criar um tópico chamado <code>mateusvicentin</code> como exemplo do funcionamento do Kafka.</p>
+<p>Vamos criar um tópico chamado <code>mateusvicentin</code> para exemplificar o funcionamento do Kafka. Um tópico no Kafka é um canal para onde os Producers enviam mensagens e de onde os Consumers as leem. Abaixo estão os passos para criar um tópico no Kafka:
 
 ```shell
 sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic mateusvicentin
@@ -46,7 +46,7 @@ sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localho
 </p>
 
 <h2>Listando Tópicos no Kafka</h2>
-<p>Vou utilizar o comando <code>--list</code> para visualizar todos os tópicos que já foram criados, inclusive o que criei: <code>mateusvicentin</code>.</p>
+<p>Para visualizar todos os tópicos que já foram criados no Kafka, incluindo o tópico <code>mateusvicentin</code>, utilizaremos o comando <code>--list</code>. Abaixo estão os passos para listar os tópicos no Kafka:</p>
 
 ```shell
 sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-topics.sh --list --zookeeper localhost:2181
