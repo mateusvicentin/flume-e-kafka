@@ -1,11 +1,22 @@
-<h1 align="center">Executando arquvios com Flume e Kafka </h1>
-<p>O projeto tem como objetivo apresentar um relatório utilizando Flume e Kafka. Este é um projeto da matéria de Processamento de Fluxos Discretos e Contínuos de Dados, que será realizado por meio de uma máquina no VirtualBox disponibilizada pelo professor, onde já estão configurados o Kafka e o Flume na máquina virtual.</p>
-
-<h2>Kafka</h2>
-<p>O Apache Kafka é um sistema de mensageria que pode realizar as seguintes funções: publicar e assinar fluxos de registros, armazenar fluxos de registros de forma eficiente na ordem em que os registros foram gerados, e processar fluxos de registros em tempo real.</p>
-
-<h2>Flume</h2>
-<p>O Apache Flume é utilizado para coletar arquivos de log de várias fontes, como servidores web, servidores de aplicativos e dispositivos de rede, ou até mesmo arquivos de texto de um computador.</p>
+<h1 align="center">Executando Arquivos com Flume e Kafka</h1>
+<p>Este projeto tem como objetivo apresentar um relatório utilizando Flume e Kafka. Trata-se de um trabalho da matéria de Processamento de Fluxos Discretos e Contínuos de Dados, que será realizado por meio de uma máquina virtual no VirtualBox já configurada. Nessa máquina virtual, o Kafka e o Flume já estão configurados.</p>
+<h2>Apache Kafka</h2>
+<p>O Apache Kafka é uma plataforma distribuída de streaming que pode realizar as seguintes funções:</p>
+<ul>
+    <li>Publicar e assinar fluxos de registros (também chamados de eventos).</li>
+    <li>Armazenar fluxos de registros de forma eficiente e ordenada.</li>
+    <li>Processar fluxos de registros em tempo real.</li>
+</ul>
+<p>O Kafka é altamente escalável e pode ser usado para uma variedade de casos de uso, incluindo análise em tempo real, monitoramento de atividades e coleta de logs.</p>
+<h2>Apache Flume</h2>
+<p>O Apache Flume é um serviço distribuído, confiável e disponível para coletar, agregar e mover grandes quantidades de dados de log de várias fontes para um repositório centralizado.</p>
+<ul>
+    <li>Coleta arquivos de log de várias fontes, como servidores web, servidores de aplicativos e dispositivos de rede.</li>
+    <li>Pode ser utilizado para coletar dados de texto de computadores e outras fontes.</li>
+    <li>Flume é altamente configurável, permitindo a criação de pipelines de dados personalizados para atender a diferentes necessidades de coleta e ingestão de dados.</li>
+</ul>
+<p>Com Flume, é possível canalizar dados de diversas fontes para sistemas como Hadoop, HDFS, HBase ou Kafka, facilitando a análise e o processamento de grandes volumes de dados.</p>
+<p>Neste projeto, utilizaremos o Flume para coletar dados de várias fontes e enviar esses dados para o Kafka, onde serão processados e analisados em tempo real.</p>
 
 
 <h2>Iniciando o Servidor do Kafka</h2>
