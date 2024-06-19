@@ -36,7 +36,7 @@ sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-server-start.sh /home/puc/kafka_2.11-1
 </p>
 
 <h2>Criando Tópicos no Kafka</h2>
-<p>Vamos criar um tópico chamado <code>mateusvicentin</code> para exemplificar o funcionamento do Kafka. Um tópico no Kafka é um canal para onde os Producers enviam mensagens e de onde os Consumers as leem. Abaixo estão os passos para criar um tópico no Kafka:
+<p>Vamos criar um tópico chamado <code>mateusvicentin</code> para exemplificar o funcionamento do Kafka. Um tópico no Kafka é um canal para onde os <code>Producers</code> enviam mensagens e de onde os <code>Consumers</code> as leem. Abaixo está o codigo para criar um tópico no Kafka:
 
 ```shell
 sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic mateusvicentin
