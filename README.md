@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/mateusvicentin/flume-e-kafka/assets/31457038/5c5b59d0-1f2d-45f4-b8ba-33f6934c9084" alt="img">
+</p>
+
 <h1 align="center">Executando Arquivos com Flume e Kafka</h1>
 <p>Este projeto tem como objetivo apresentar um relatório utilizando Flume e Kafka. Trata-se de um trabalho da matéria de Processamento de Fluxos Discretos e Contínuos de Dados, que será realizado por meio de uma máquina virtual no VirtualBox. Nessa máquina virtual, o Kafka e o Flume já estão configurados.</p>
 <h2>Apache Kafka</h2>
